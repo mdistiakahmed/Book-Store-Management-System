@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="appMother" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@../style/home.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.homePageController">
+   <children>
+      <Button fx:id="emp_btn" layoutX="575.0" layoutY="397.0" mnemonicParsing="false" onAction="#Employee_btn_action" prefHeight="53.0" prefWidth="123.0" text="Employee" textFill="#613bc4" />
+      <Button layoutX="575.0" layoutY="54.0" mnemonicParsing="false" onAction="#book_btn_action" prefHeight="53.0" prefWidth="123.0" text="Stored Books" textFill="#603cc2" />
+      <Button layoutX="575.0" layoutY="300.0" mnemonicParsing="false" onAction="#record_btn_action" prefHeight="53.0" prefWidth="123.0" text="Publisher Record" />
+      <Button layoutX="575.0" layoutY="181.0" mnemonicParsing="false" onAction="#sell_btn_action" prefHeight="53.0" prefWidth="123.0" text="New Sell" />
+      <Button layoutX="575.0" layoutY="500.0" mnemonicParsing="false" onAction="#cus_rec_btn_action" prefHeight="53.0" prefWidth="123.0" text="Customer Record" textFill="#613bc4" />
+      <Button layoutX="47.0" layoutY="541.0" mnemonicParsing="false" onAction="#logout_out" prefHeight="25.0" prefWidth="80.0" text="Log Out" />
+   </children>
+</AnchorPane>

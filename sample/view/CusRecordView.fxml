@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.CusRecordViewController">
+   <children>
+      <TextField fx:id="name_txt" layoutX="75.0" layoutY="22.0" prefHeight="25.0" prefWidth="207.0" promptText="Enter Name" />
+      <TextField fx:id="mobile_txt" layoutX="75.0" layoutY="56.0" prefHeight="25.0" prefWidth="207.0" promptText="Enter Moile Number" />
+      <Button layoutX="335.0" layoutY="22.0" mnemonicParsing="false" onAction="#search_btn_action" text="Search" />
+      <Button layoutX="700.0" layoutY="561.0" mnemonicParsing="false" onAction="#see_all_btn_action" prefHeight="25.0" prefWidth="74.0" text="See All" />
+      <TableView fx:id="table" layoutX="2.0" layoutY="95.0" prefHeight="464.0" prefWidth="794.0">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="95.0" text="Name" />
+          <TableColumn fx:id="mobileCol" prefWidth="90.0" text="Mobile Number" />
+            <TableColumn fx:id="dateCol" prefWidth="96.0" text="Purchase Date" />
+            <TableColumn fx:id="bookCol" prefWidth="108.0" text="Book Name" />
+            <TableColumn fx:id="pubCol" prefWidth="85.0" text="Publisher" />
+            <TableColumn fx:id="copiesCol" prefWidth="122.0" text="Copies" />
+            <TableColumn fx:id="priceCol" prefWidth="102.0" text="Price" />
+            <TableColumn fx:id="emp_id_col" prefWidth="95.0" text="EMP ID" />
+        </columns>
+      </TableView>
+      <Button layoutX="26.0" layoutY="561.0" mnemonicParsing="false" onAction="#home_btn_action" text="Home" />
+      <Label layoutX="18.0" layoutY="26.0" text="Name" />
+      <Label layoutX="18.0" layoutY="60.0" text="Mobile" />
+      <Button layoutX="335.0" layoutY="565.0" mnemonicParsing="false" onAction="#delete_all_action" prefHeight="25.0" prefWidth="81.0" text="Delete All" />
+   </children>
+</AnchorPane>

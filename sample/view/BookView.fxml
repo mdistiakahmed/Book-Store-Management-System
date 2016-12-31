@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.BookViewController">
+   <children>
+      <TableView fx:id="bookTable" layoutX="8.0" layoutY="163.0" prefHeight="385.0" prefWidth="785.0">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="214.0" text="Name" />
+          <TableColumn fx:id="publisherCol" prefWidth="305.0" text="Publisher" />
+            <TableColumn fx:id="copiesCol" prefWidth="257.0" text="Copies" />
+        </columns>
+      </TableView>
+      <TextField fx:id="book_name_txt" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="167.0" promptText="Book Name" />
+      <TextField fx:id="publisher_txt" layoutX="14.0" layoutY="47.0" prefHeight="25.0" prefWidth="167.0" promptText="Publisher" />
+      <TextField fx:id="copies_txt" layoutX="14.0" layoutY="119.0" prefHeight="25.0" prefWidth="167.0" promptText="Copies" />
+      <Button layoutX="225.0" layoutY="14.0" mnemonicParsing="false" onAction="#add_btn_action" prefHeight="25.0" prefWidth="84.0" text="Add" />
+      <TextField fx:id="gen_name_txt" layoutX="414.0" layoutY="35.0" prefHeight="25.0" prefWidth="301.0" promptText="Enter book name or publisher name" />
+      <Button layoutX="366.0" layoutY="94.0" mnemonicParsing="false" onAction="#search_book_btn_action" prefHeight="25.0" prefWidth="141.0" text="Search by Book Name" />
+      <Button layoutX="553.0" layoutY="94.0" mnemonicParsing="false" onAction="#search_publisher_btn_action" prefHeight="25.0" prefWidth="156.0" text="Search by Publisher Name" />
+      <Button layoutX="14.0" layoutY="561.0" mnemonicParsing="false" onAction="#home_btn_action" text="Home" />
+      <Button layoutX="685.0" layoutY="561.0" mnemonicParsing="false" onAction="#see_all_btn_action" prefHeight="25.0" prefWidth="84.0" text="See All" />
+      <TextField fx:id="price_txt" layoutX="14.0" layoutY="81.0" prefHeight="25.0" prefWidth="167.0" promptText="Price" />
+      <Button layoutX="745.0" layoutY="94.0" mnemonicParsing="false" onAction="#delete_book_action" text="delete" />
+   </children>
+</AnchorPane>

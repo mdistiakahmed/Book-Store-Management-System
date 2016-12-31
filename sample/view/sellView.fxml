@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.SellViewController">
+   <children>
+      <TextField fx:id="book_txt" layoutX="323.0" layoutY="137.0" prefHeight="25.0" prefWidth="226.0" promptText="Book Name" />
+      <TextField fx:id="pub_txt" layoutX="323.0" layoutY="175.0" prefHeight="25.0" prefWidth="226.0" promptText="Publisher Name" />
+      <TextField fx:id="copies_txt" layoutX="323.0" layoutY="220.0" prefHeight="25.0" prefWidth="226.0" promptText="Number of Copies" />
+      <Button layoutX="419.0" layoutY="315.0" mnemonicParsing="false" onAction="#sell_btn_action" prefHeight="25.0" prefWidth="94.0" text="Sell" />
+      <TextField fx:id="age_txt" layoutX="28.0" layoutY="175.0" prefHeight="25.0" prefWidth="226.0" promptText="Age" />
+      <TextField fx:id="cus_name_txt" layoutX="28.0" layoutY="137.0" prefHeight="25.0" prefWidth="226.0" promptText="Customer Name" />
+      <TextField fx:id="mobile_txt" layoutX="28.0" layoutY="220.0" prefHeight="25.0" prefWidth="226.0" promptText="Mobile Number" />
+      <Label layoutX="72.0" layoutY="68.0" prefHeight="48.0" prefWidth="172.0" text="Customer Information" />
+      <Label layoutX="371.0" layoutY="68.0" prefHeight="48.0" prefWidth="172.0" text="Book Information" />
+      <Button layoutX="28.0" layoutY="354.0" mnemonicParsing="false" onAction="#home_btn_action" text="Home" />
+      <TextField fx:id="emp_id_txt" layoutX="323.0" layoutY="262.0" prefHeight="25.0" prefWidth="226.0" promptText="Employee ID" />
+   </children>
+</AnchorPane>

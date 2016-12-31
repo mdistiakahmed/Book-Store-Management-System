@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.EmployeeViewController">
+    <children>
+        <TextField fx:id="empIdText" layoutX="286.0" layoutY="53.0" prefHeight="25.0" prefWidth="187.0" promptText="Emp ID" />
+        <Label layoutX="300.0" layoutY="19.0" text="Employee ID" />
+        <Button fx:id="searchEmpBtn" layoutX="254.0" layoutY="103.0" mnemonicParsing="false" onAction="#searchEmployee" prefHeight="25.0" prefWidth="79.0" text="Search" />
+        <Button fx:id="deleteEmpBtn" layoutX="502.0" layoutY="102.0" mnemonicParsing="false" onAction="#deleteEmployee" prefHeight="25.0" prefWidth="79.0" text="Delete" />
+        <Button fx:id="updateEmpBtn" layoutX="376.0" layoutY="102.0" mnemonicParsing="false" onAction="#updateEmployeeEmail" prefHeight="25.0" prefWidth="79.0" text="Update" />
+        <Button fx:id="addEmpBtn" layoutX="117.0" layoutY="137.0" mnemonicParsing="false" onAction="#insertEmployee" text="Add Employee" />
+        <TextField fx:id="newSalaryText" layoutX="555.0" layoutY="53.0" prefHeight="25.0" prefWidth="187.0" promptText="new salary" />
+        <Label layoutX="552.0" layoutY="15.0" text="New salary" />
+          <TextField fx:id="nameText" layoutX="97.0" layoutY="24.0" prefHeight="25.0" prefWidth="113.0" promptText="Name" />
+          <TextField fx:id="idText" layoutX="97.0" layoutY="62.0" prefHeight="25.0" prefWidth="113.0" promptText="ID" />
+          <TextField fx:id="salaryText" layoutX="97.0" layoutY="102.0" prefHeight="25.0" prefWidth="113.0" promptText="salary" />
+          <Label layoutX="9.0" layoutY="28.0" text="Name" />
+          <Label layoutX="8.0" layoutY="66.0" text="ID" />
+          <Label layoutX="10.0" layoutY="106.0" text="salary" />
+        <TableView fx:id="employeeTable" editable="true" layoutX="9.0" layoutY="190.0" prefHeight="369.0" prefWidth="784.0" tableMenuButtonVisible="true">
+            <columns>
+                <TableColumn fx:id="empIdColumn" prefWidth="142.0" text="Id" />
+                <TableColumn fx:id="empNameColumn" prefWidth="211.0" text="Name" />
+                <TableColumn fx:id="empSalaryColumn" prefWidth="203.0" text="salary" />
+                <TableColumn fx:id="empHireDateColumn" prefWidth="211.0" text="Hire Date" />
+            </columns>
+        </TableView>
+        <Button fx:id="searchEmpsBtn" layoutX="637.0" layoutY="102.0" mnemonicParsing="false" onAction="#searchEmployees" prefHeight="25.0" prefWidth="139.0" text="Search All Employees" />
+      <Button layoutX="18.0" layoutY="567.0" mnemonicParsing="false" onAction="#home_btn_action" text="Home" />
+    </children>
+</AnchorPane>

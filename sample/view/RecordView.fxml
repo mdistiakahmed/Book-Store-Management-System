@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.ReccordViewController">
+   <children>
+      <TableView fx:id="table" layoutX="9.0" layoutY="135.0" prefHeight="404.0" prefWidth="778.0">
+        <columns>
+          <TableColumn fx:id="pubCol" prefWidth="135.0" text="Publisher Name" />
+            <TableColumn fx:id="copiesCol" prefWidth="108.0" text="Copies" />
+            <TableColumn fx:id="dateCol" prefWidth="136.0" text="Purchase Date" />
+            <TableColumn fx:id="priceCol" prefWidth="169.0" text="Price(Each)" />
+          <TableColumn fx:id="bookCol" prefWidth="226.0" text="Book Name" />
+        </columns>
+      </TableView>
+      <Button layoutX="570.0" layoutY="28.0" mnemonicParsing="false" onAction="#by_publisher_action" text="By Publisher" />
+      <Button layoutX="570.0" layoutY="78.0" mnemonicParsing="false" onAction="#by_book_action" prefHeight="25.0" prefWidth="81.0" text="By Book" />
+      <Button layoutX="28.0" layoutY="551.0" mnemonicParsing="false" onAction="#home_btn_action" text="Home" />
+      <Button layoutX="694.0" layoutY="551.0" mnemonicParsing="false" onAction="#see_all_action" prefHeight="25.0" prefWidth="81.0" text="See All" />
+      <DatePicker fx:id="by_date" layoutX="7.0" layoutY="40.0" onAction="#by_date_action" promptText="Search by Date" />
+      <Label layoutX="14.0" layoutY="14.0" text="Search by date">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <ChoiceBox fx:id="choiceBox" layoutX="313.0" layoutY="28.0" prefHeight="25.0" prefWidth="203.0" />
+      <ChoiceBox fx:id="choice_by_book" layoutX="313.0" layoutY="78.0" prefHeight="25.0" prefWidth="203.0" />
+   </children>
+</AnchorPane>
